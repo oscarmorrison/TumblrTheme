@@ -130,96 +130,10 @@
                 <div class="title">{lang:Close}</div>
             </div>
         </div>
-        <ul class="main-nav">
-            <li><a href="/">{lang:Home}</a></li>
-            {block:HasPages}
-            {block:Pages}
-            <li><a href="{URL}">{Label}</a></li>
-            {/block:Pages}
-            {/block:HasPages}
-        </ul>
-        <ul class="secondary-nav">
-            <li><a href="/archive">{lang:Archive}</a></li>
-            {block:AskEnabled}
-            <li><a href="/ask">{AskLabel}</a></li>
-            {/block:AskEnabled}
-            {block:SubmissionsEnabled}
-            <li><a href="/submit">{SubmitLabel}</a></li>
-            {/block:SubmissionsEnabled}
-        </ul>
-        <div class="nav-search">
-            <form action="/search" method="get">
-                <input type="text" name="q" value="{SearchQuery}" placeholder="{lang:Search}...">
-                <button type="submit">
-                    <i class="icon-search" aria-hidden="true" data-icon="&#x26b2;"></i>
-                </button>
-            </form>
+        <div class="main-nav">
+            <iframe src="http://oscarmorrison.com/TahneeandOscarMap/" style="width:100%; height:100%;"></iframe>
         </div>
-        <ul class="social-nav">
-            {block:IfWebsiteLink}
-            <li><a href="{text:Website Link}" target="_blank" aria-hidden="true" data-icon="&#x57;"></a></li>
-            {/block:IfWebsiteLink}
-            {block:IfShopLink}
-            <li><a href="{text:Shop Link}" target="_blank" aria-hidden="true" data-icon="&#x73;"></a></li>
-            {/block:IfShopLink}
-            {block:IfFacebookLink}
-            <li><a href="{text:Facebook Link}" target="_blank" aria-hidden="true" data-icon="&#x46;"></a></li>
-            {/block:IfFacebookLink}
-            {block:IfTwitterLink}
-            <li><a href="{text:Twitter Link}" target="_blank" aria-hidden="true" data-icon="&#x54;"></a></li>
-            {/block:IfTwitterLink}
-            {block:IfGooglePlusLink}
-            <li><a href="{text:Google Plus Link}" target="_blank" aria-hidden="true" data-icon="&#x47;"></a></li>
-            {/block:IfGooglePlusLink}
-            {block:IfYoutubeLink}
-            <li><a href="{text:Youtube Link}" target="_blank" aria-hidden="true" data-icon="&#x59;"></a></li>
-            {/block:IfYoutubeLink}
-            {block:IfVimeoLink}
-            <li><a href="{text:Vimeo Link}" target="_blank" aria-hidden="true" data-icon="&#x56;"></a></li>
-            {/block:IfVimeoLink}
-            {block:IfPinterestLink}
-            <li><a href="{text:Pinterest Link}" target="_blank" aria-hidden="true" data-icon="&#x50;"></a></li>
-            {/block:IfPinterestLink}
-            {block:IfDribbbleLink}
-            <li><a href="{text:Dribbble Link}" target="_blank" aria-hidden="true" data-icon="&#x44;"></a></li>
-            {/block:IfDribbbleLink}
-            {block:IfInstagramLink}
-            <li><a href="{text:Instagram Link}" target="_blank" aria-hidden="true" data-icon="&#x49;"></a></li>
-            {/block:IfInstagramLink}
-            {block:IfSoundCloudLink}
-            <li><a href="{text:SoundCloud Link}" target="_blank" aria-hidden="true" data-icon="&#x53;"></a></li>
-            {/block:IfSoundCloudLink}
-            {block:IfSpotifyLink}
-            <li><a href="{text:Spotify Link}" target="_blank" aria-hidden="true" data-icon="&#x6d;"></a></li>
-            {/block:IfSpotifyLink}
-            {block:IfLinkedInLink}
-            <li><a href="{text:LinkedIn Link}" target="_blank" aria-hidden="true" data-icon="&#x4c;"></a></li>
-            {/block:IfLinkedInLink}
-            {block:IfFlickrLink}
-            <li><a href="{text:Flickr Link}" target="_blank" aria-hidden="true" data-icon="&#x267e;"></a></li>
-            {/block:IfFlickrLink}
-            {block:IfMediumLink}
-            <li><a href="{text:Medium Link}" target="_blank" aria-hidden="true" data-icon="&#x4d;"></a></li>
-            {/block:IfMediumLink}
-            {block:IfVineLink}
-            <li><a href="{text:Vine Link}" target="_blank" aria-hidden="true" data-icon="&#x76;"></a></li>
-            {/block:IfVineLink}
-            {block:IfVKLink}
-            <li><a href="{text:VK Link}" target="_blank" aria-hidden="true" data-icon="&#x6b;"></a></li>
-            {/block:IfVKLink}
-            {block:IfPicasaLink}
-            <li><a href="{text:Picasa Link}" target="_blank" aria-hidden="true" data-icon="&#x4f;"></a></li>
-            {/block:IfPicasaLink}
-            {block:IfGitHubLink}
-            <li><a href="{text:GitHub Link}" target="_blank" aria-hidden="true" data-icon="&#x48;"></a></li>
-            {/block:IfGitHubLink}
-            {block:IfLastFmLink}
-            <li><a href="{text:LastFm Link}" target="_blank" aria-hidden="true" data-icon="&#x41;"></a></li>
-            {/block:IfLastFmLink}
-            {block:IfBloggerLink}
-            <li><a href="{text:Blogger Link}" target="_blank" aria-hidden="true" data-icon="&#x42;"></a></li>
-            {/block:IfBloggerLink}
-        </ul>
+        
     </nav>
     <div class="pusher">
         <div id="content-wrapper">
